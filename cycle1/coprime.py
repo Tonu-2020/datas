@@ -1,41 +1,12 @@
-# Python3 program to check if two
-# numbers are co-prime or not
-
-# Recursive function to
-# return gcd of a and b
-def __gcd(a, b):
-    # Everything divides 0
-    if (a == 0 or b == 0): return 0
-
-    # base case
-    if (a == b): return a
-
-    # a is greater
-    if (a > b):
-        return __gcd(a - b, b)
-
-    return __gcd(a, b - a)
-
-
-# Function to check and print if
-# two numbers are co-prime or not
-def coprime(a, b):
-    if (__gcd(a, b) == 1):
-        print("", a, b)
-        print("Co-Prime")
-    else:
-        print("", c, d)
-        print("Not Co-Prime")
-
-    # Driver code
-
-
-a = 16;
-b = 14
-coprime(a, b)
-
-c = 15;
-d = 5
-coprime(c, d)
-
-# This code is contributed by Anant Agarwal
+def coprime(a,b):
+    f=1
+    for x in range(1,a+1):
+        if a%x==0 and b%x==0:
+            f=1
+    return f==1
+n1=int(input("Enter the First number:"))
+n2=int(input("Enter the Second number:"))
+if coprime(n1,n2):
+    print("The given numbers are co-prime")
+else:
+    print("The given numbers are not coprime")
