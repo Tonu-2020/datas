@@ -2,7 +2,7 @@ lst = []
 
 p = int(input("Enter size of phonenumber : "))
 print("enter the phonenumber")
-# iterating till the range
+
 for i in range(0, p):
     ele = int(input())
  
