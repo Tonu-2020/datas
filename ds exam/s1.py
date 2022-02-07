@@ -14,4 +14,6 @@ plt.scatter(x,y, marker="^")
 
 plt.legend(["Maths", "English"], loc ="upper right")
 plt.show()
+
+
  
