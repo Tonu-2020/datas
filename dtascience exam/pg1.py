@@ -1,5 +1,4 @@
 import numpy as np
-import seaborn as SnS
 arr1= np.arange(1,17).reshape(4,4)
 
 print(arr1)
